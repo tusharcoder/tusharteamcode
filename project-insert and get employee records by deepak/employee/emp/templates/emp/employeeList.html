@@ -1,0 +1,11 @@
+{% if employee_list %}
+    <ul>
+    {% for employee in employee_list %}
+        <li>{{ employee.fname }}-{{ employee.lname }}-{{ employee.sal }}-</li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+<br>
+
+<a href="/emp/insert/">Click to add to table</a>
